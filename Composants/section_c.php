@@ -98,34 +98,60 @@
                 </div>
             </div>
 
+            <?php 
+            
+                $array_divertissement=array(
+                    "photo_7"=>"img/photo_7.jpg",
+                    "photo_9"=>"img/photo_9.jpg",
+                    "photo_1"=>"img/photo1.jpg",
+                    "photo_8"=>"img/photo_8.jpg",
+                    "photo_4"=>"img/photo4.jpg",
+                    "photo_5"=>"img/photo_5.jpg",
+                    "photo_6"=>"img/photo_6.jpg"
+
+                )
+            
+            ?>
+
             <div class="divertissement">
                 <div class="point_interet card">
                     <h3>Points d'interets</h3>
                     <p class="header_subtitle"> Simple passe temps pour se faire un peu plaisir </p>
                     <div class="logo_divertissement">
-                        <img src="img/photo_7.jpg" style="height: 50px;" alt="">
-                        <img src="img/photo_9.jpg" style="height: 30px;" alt="">
-                        <img src="img/photo1.jpg" alt="">
+                        <img src="<?= $array_divertissement['photo_7']?>" style="height: 50px;" alt="">
+                        <img src="<?= $array_divertissement['photo_9']?>" style="height: 30px;" alt="">
+                        <img src="<?= $array_divertissement['photo_1']?>" alt="">
                     </div>
                     <div class="logo_divertissement">
-                        <img src="img/photo_8.jpg" style="height: 50px;" alt="">
-                        <img src="img/photo4.jpg" style="height: 40px;" alt="">
-                        <img src="img/photo_5.jpg" style="height: 30px;" alt="">
-                        <img src="img/photo_6.jpg" style="height: 40px;" alt="">
+                        <img src="<?= $array_divertissement['photo_8']?>" style="height: 50px;" alt="">
+                        <img src="<?= $array_divertissement['photo_4']?>" style="height: 40px;" alt="">
+                        <img src="<?= $array_divertissement['photo_5']?>" style="height: 30px;" alt="">
+                        <img src="<?= $array_divertissement['photo_6']?>" style="height: 40px;" alt="">
                     </div>
 
                 </div>
+
+                <?php 
+                
+                $array_langage=array(
+
+                    "langue_anglaise"=>"Anglais",
+                    "langue_française"=>"Français"
+
+                )
+                
+                ?>
 
                 <div class=" langue card">
                     <h3>Langue</h3>
                     <p class="header_subtitle"> Pratiquées en entreprise </p>
                     <div class="langue_check">
                         <input class="check" type="checkbox" checked style="color: #185383;">
-                        <label for="">Francais</label>
+                        <label for=""><?=$array_langage['langue_française']?></label>
                     </div>
                     <div class="langue_check">
                         <input class="check" type="checkbox" checked>
-                        <label for="">Anglais</label>
+                        <label for=""><?= $array_langage['langue_anglaise']?></label>
                     </div>
                 </div>
 

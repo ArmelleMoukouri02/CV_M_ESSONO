@@ -4,7 +4,7 @@
     $array_competences=array(
         array("intitule"=>"Developpement front-end", "technologies"=>"HTML5, SASS, VueJS, Angular, JavaFx,.."),
 
-        array("intitule"=>"Developpement back-end", "technologies"=>"NodeJS, Drupal 8, Laravel, Kotlin, Java EE 7"),
+        array("intitule"=>"Developpement back-end", "technologies"=>"NodeJS, Drupal 8, Laravel, Kotlin, Java EE 7", "switcher_bar"=>80),
 
         array("intitule"=>"Developpement mobile", "technologies"=>"Android Kotlin, IOS Swift, Cordova, Flutter"),
 
@@ -27,10 +27,10 @@
             <i class="fas fa-star" style="color: rgb(201, 40, 40); margin-top: 5px;"></i>
         </div>
         <p class="competence"><?= $competences['technologies']?></p>
-        <div class="switcher">
+        <!-- <div class="switcher">
             <div class="switcher_bar" style="width: 90%;"></div>
             <span class="switcher_circle" style="right: 10%;"></span>
-        </div>
+        </div> -->
     </div>
 </div>
 

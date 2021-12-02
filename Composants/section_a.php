@@ -13,15 +13,18 @@
 
         "email"=>"armellemoukouri@gmail.com", "reseauxsociaux"=>"Google+, Twitter, LinkedIn, Github",
 
-        "projets"=>"+45", "contact_pro"=>"+31", "an_exper"=>"12 ANS"
+        "projets"=>"+45", "contact_pro"=>"+31", "an_exper"=>"12 ANS",
 
-    )
+        "photo_profil"=>"img/photo_10 (1).jpg",
+
+        "photo_couverture"=>"img/photo_10 (2).jpg"
+
+    );
 
 ?>
-
 <div class="images">
 
-<div class="couverture"></div>
+<div class="couverture" style=" background-image: url('<?=$array_infopersonelle['photo_couverture']?>'); background-color: #185383;"></div>
 <div class="nav">
 
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -43,7 +46,7 @@
       </svg>
 </div>
 <div class="profil">
-    <img src="img/photo_10 (1).jpg" width="120px" height="120px"  alt="" class="photo_profil">
+    <img src="<?=$array_infopersonelle['photo_profil']?>" width="120px" height="120px"  alt="" class="photo_profil">
     <div class="nom">
         <h3> <?= $array_infopersonelle['nom']?> <br> <?=$array_infopersonelle['prenom']?></h3>
         <p class="travail"> <?= $array_infopersonelle['metier']?></p>

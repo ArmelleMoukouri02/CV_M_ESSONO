@@ -52,7 +52,7 @@
 .images {
     height: 400px;
     position: relative;
-    background-image: url("img/photo_10\ \(2\).jpg");
+    
     background-size: cover;
 }
 
@@ -432,6 +432,15 @@ hr {
     margin-bottom: calc(var(--global-margin)*2);
 }
 
+.point_interet{
+    width: 100%;
+}
+
+.langue{
+    width: 100%;
+    margin-top: 20px;
+}
+
 .logo_divertissement {
     display: flex;
     justify-content: space-between;
@@ -479,6 +488,12 @@ hr {
         flex-direction: column;
         width: 95%;
     }
+
+    .divertissement{
+        display: flex;
+        flex-direction: column;
+    }
+
     .a {
         order: 1;
     }
