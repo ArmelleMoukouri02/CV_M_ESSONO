@@ -27,10 +27,11 @@
             <i class="fas fa-star" style="color: rgb(201, 40, 40); margin-top: 5px;"></i>
         </div>
         <p class="competence"><?= $competences['technologies']?></p>
-        <!-- <div class="switcher">
+        <div class="switcher">
             <div class="switcher_bar" style="width: 90%;"></div>
             <span class="switcher_circle" style="right: 10%;"></span>
-        </div> -->
+        </div>
+        
     </div>
 </div>
 
