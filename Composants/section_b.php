@@ -1,41 +1,30 @@
 
 <?php
 
+
     $array_competences=array(
-        array("intitule"=>"Developpement front-end", "technologies"=>"HTML5, SASS, VueJS, Angular, JavaFx,.."),
+        new Competence("Developpement front-end", "HTML5, SASS, VueJS, Angular, JavaFx,..",90),
 
-        array("intitule"=>"Developpement back-end", "technologies"=>"NodeJS, Drupal 8, Laravel, Kotlin, Java EE 7", "switcher_bar"=>80),
+        new Competence("Developpement back-end", "NodeJS, Drupal 8, Laravel, Kotlin, Java EE 7",80),
 
-        array("intitule"=>"Developpement mobile", "technologies"=>"Android Kotlin, IOS Swift, Cordova, Flutter"),
+        new Competence("Developpement mobile", "Android Kotlin, IOS Swift, Cordova, Flutter", 70),
 
-        array("intitule"=>"UI / UX Designer", "technologies"=>"Photoshop CC, Adobe XD, Material Design"),
+        new Competence("UI / UX Designer", "Photoshop CC, Adobe XD, Material Design", 80),
 
-        array("intitule"=>"Base de données & Big Data", "technologies"=>"Oracle 11g, PostgreSQL, Hadoop, Talend DI"),
+        new Competence("Base de données & Big Data", "Oracle 11g, PostgreSQL, Hadoop, Talend DI", 30),
 
-        array("intitule"=>"Outils / Environnements", "technologies"=>"Visual Paradigm, Git, Docker, K8s, Linux"),
+        new Competence("Outils / Environnements", "Visual Paradigm, Git, Docker, K8s, Linux", 80),
     )
 
 ?>
 
-<?php foreach($array_competences as $competences){ ?>
+<?php foreach($array_competences as $competences){
+    $competences->get_composant3();
+}
+    
+    ?>
 
-<div class="experience">
-    <input checked type="checkbox" class="check">
-    <div class="plus_info">
-        <div class="skill">
-            <h4><?= $competences['intitule']?></h4>
-            <i class="fas fa-star" style="color: rgb(201, 40, 40); margin-top: 5px;"></i>
-        </div>
-        <p class="competence"><?= $competences['technologies']?></p>
-        <div class="switcher">
-            <div class="switcher_bar" style="width: 90%;"></div>
-            <span class="switcher_circle" style="right: 10%;"></span>
-        </div>
-        
-    </div>
-</div>
 
-<?php }?>
 
 <!-- <div class="experience"> 
     <input checked type="checkbox" class="check">
